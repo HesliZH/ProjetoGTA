@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Gerais</name>
+    <events>
+        <variable constant="0" name="NoCarro" sid="235177271860957" static="0" type="number">0</variable>
+        <event-group description="" sid="653307319961199" title="EntraCarro">
+            <sub-events>
+                <event-block sid="739189008721920">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="841219285755203" type="Teclado">
+                            <param id="0" name="Key">69</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="949624279936554" type="triggerZone_Carro">
+                            <param id="0" name="Object">Carro001</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="437863894099480">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="782422841987494" type="Teclado">
+                            <param id="0" name="Key">69</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="887058128753923" type="triggerZone_Carro">
+                            <param id="0" name="Object">Carro2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="461317972618849">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="126588930772889" type="Teclado">
+                            <param id="0" name="Key">69</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="717968710525271" type="triggerZone_Carro">
+                            <param id="0" name="Object">Carro3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="169332458466608">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="119234338451680" type="Teclado">
+                            <param id="0" name="Key">69</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="668032184943933" type="triggerZone_Carro">
+                            <param id="0" name="Object">Carro4</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="734223868405417">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="470335910650823" type="Teclado">
+                            <param id="0" name="Key">69</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="616926067155909" type="triggerZone_Carro">
+                            <param id="0" name="Object">Carro5</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="973283457040049" title="SairCarro" />
+        <event-group description="" sid="276513042910838" title="ControleDeGatilhos">
+            <sub-events>
+                <event-block sid="195851604020982">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="838312011926063" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="162234878415293" type="triggerZone_Carro">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Animações</name>
+    <events>
+        <event-group description="" sid="980283952366613" title="SimulaMovimento">
+            <sub-events>
+                <event-block sid="818223525467125">
+                    <conditions>
+                        <condition behavior="8Direction" id="0" name="Is moving" sid="265567463841280" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="811367673821626" type="Player">
+                            <param id="0" name="Animation">&quot;andando&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="733929944861679">
+                    <conditions>
+                        <condition behavior="8Direction" id="0" inverted="1" name="Is moving" sid="546419218013980" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="516622250158290" type="Player">
+                            <param id="0" name="Animation">&quot;parado&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

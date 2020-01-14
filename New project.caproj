@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2wf5h0zqh6jrl</unique-id>
+    <saved-with-version>26500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1366</width>
+        <height>768</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Player">
+            <object-type name="Player" sid="300377687521617">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="ScrollTo" sid="799823144071775">
+                        <behavior id="scrollto" />
+                    </behavior-type>
+                    <behavior-type name="8Direction" sid="142659767013269">
+                        <behavior id="EightDir" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="parado" pingpong="0" repeatcount="1" repeatto="0" sid="401076639453205" speed="0">
+                        <frame duration="1" hotspotX="0.517241" hotspotY="0.493333" original-source="C:\Projetos\ProjetoGTA\MundoAbertoCompleto\Personagem_mundoAberto\parado.png">
+                            <collision-poly>
+                                <point x="0.241379" y="0.906667" />
+                                <point x="0" y="0.506667" />
+                                <point x="0.241379" y="0.0933333" />
+                                <point x="0.482759" y="0" />
+                                <point x="0.758621" y="0.0933333" />
+                                <point x="1" y="0.506667" />
+                                <point x="0.758621" y="0.906667" />
+                                <point x="0.482759" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="5" loop="1" name="andando" pingpong="0" repeatcount="1" repeatto="0" sid="375614883647636" speed="5">
+                        <frame duration="1" hotspotX="0.509804" hotspotY="0.5" original-source="C:\Projetos\ProjetoGTA\MundoAbertoCompleto\Personagem_mundoAberto\andando\frame2.png">
+                            <collision-poly>
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.507246" hotspotY="0.493671" original-source="C:\Projetos\ProjetoGTA\MundoAbertoCompleto\Personagem_mundoAberto\andando\frame3.png">
+                            <collision-poly>
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.509804" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.507246" hotspotY="0.506329">
+                            <collision-poly>
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.509804" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Carros">
+            <object-type name="Carro001" sid="667550620731556">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="754624288035351" speed="5">
+                        <frame duration="1" hotspotX="0.501048" hotspotY="0.5" original-source="C:\Projetos\ProjetoGTA\Texturas\Carros\000.png">
+                            <collision-poly>
+                                <point x="0.0419287" y="0.0746269" />
+                                <point x="0.498952" y="0.00373134" />
+                                <point x="0.918239" y="0.145522" />
+                                <point x="0.997904" y="0.5" />
+                                <point x="0.918239" y="0.854478" />
+                                <point x="0.498952" y="0.996269" />
+                                <point x="0.0419287" y="0.925373" />
+                                <point x="0.00209644" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Carro2" sid="336565173115213">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="889683580847808" speed="5">
+                        <frame duration="1" hotspotX="0.500846" hotspotY="0.5" original-source="C:\Projetos\ProjetoGTA\Texturas\Carros\001.png">
+                            <collision-poly>
+                                <point x="0.0419287" y="0.0746269" />
+                                <point x="0.498952" y="0.00373134" />
+                                <point x="0.918239" y="0.145522" />
+                                <point x="0.997904" y="0.5" />
+                                <point x="0.918239" y="0.854478" />
+                                <point x="0.498952" y="0.996269" />
+                                <point x="0.0419287" y="0.925373" />
+                                <point x="0.00209644" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Carro3" sid="214397423805426">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="354559739772258" speed="5">
+                        <frame duration="1" hotspotX="0.501873" hotspotY="0.501538" original-source="C:\Projetos\ProjetoGTA\Texturas\Carros\002.png">
+                            <collision-poly>
+                                <point x="0.0419287" y="0.0746269" />
+                                <point x="0.498952" y="0.00373134" />
+                                <point x="0.918239" y="0.145522" />
+                                <point x="0.997904" y="0.5" />
+                                <point x="0.918239" y="0.854478" />
+                                <point x="0.498952" y="0.996269" />
+                                <point x="0.0419287" y="0.925373" />
+                                <point x="0.00209644" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Carro4" sid="663520867480383">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="992266132339311" speed="5">
+                        <frame duration="1" hotspotX="0.501873" hotspotY="0.5" original-source="C:\Projetos\ProjetoGTA\Texturas\Carros\003.png">
+                            <collision-poly>
+                                <point x="0.0419287" y="0.0746269" />
+                                <point x="0.498952" y="0.00373134" />
+                                <point x="0.918239" y="0.145522" />
+                                <point x="0.997904" y="0.5" />
+                                <point x="0.918239" y="0.854478" />
+                                <point x="0.498952" y="0.996269" />
+                                <point x="0.0419287" y="0.925373" />
+                                <point x="0.00209644" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Carro5" sid="315084001475625">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="846772626091948" speed="5">
+                        <frame duration="1" hotspotX="0.502016" hotspotY="0.5" original-source="C:\Projetos\ProjetoGTA\Texturas\Carros\004.png">
+                            <collision-poly>
+                                <point x="0.0419287" y="0.0746269" />
+                                <point x="0.498952" y="0.00373134" />
+                                <point x="0.918239" y="0.145522" />
+                                <point x="0.997904" y="0.5" />
+                                <point x="0.918239" y="0.854478" />
+                                <point x="0.498952" y="0.996269" />
+                                <point x="0.0419287" y="0.925373" />
+                                <point x="0.00209644" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Armas" />
+        <object-folder name="Arrays" />
+        <object-folder name="Fundos">
+            <object-type name="ChaoTerra" sid="395194466744900">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Projetos\ProjetoGTA\Texturas\FundoTerra.png" />
+            </object-type>
+            <object-type name="ChaoGrama" sid="891949955290917">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Projetos\ProjetoGTA\Texturas\FundoGrama.png" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Detalhes">
+            <object-type name="Asfalto" sid="331910306837567">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Projetos\ProjetoGTA\Texturas\Estrada.png" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Gatilhos">
+            <object-type name="triggerZone_Carro" sid="388720331398087">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="725288162159274">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="407289520283027" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Controles">
+            <object-type name="Teclado" sid="494883498848722">
+                <plugin id="Keyboard" />
+            </object-type>
+        </object-folder>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Mapa01.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Eventos Mapa01.xml</event-sheet>
+        <event-sheet>Eventos Animações.xml</event-sheet>
+        <event-sheet>Eventos Configurações.xml</event-sheet>
+        <event-sheet>Eventos Gerais.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Teclado" uid="6" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
